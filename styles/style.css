@@ -73,6 +73,7 @@
 
 .cover {
     position: relative;
+    background-image: url('/images/cover.jpg');
     padding: 165px 50px 50px;
     min-height: 757px;
 }
@@ -110,9 +111,7 @@
     translate: 0.3em 0;
 }
 
-.cover {
-    background-image: url('/images/cover.jpg');
-}
+
 
 .cover__description {
     display: flex;
