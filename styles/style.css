@@ -1,8 +1,18 @@
+.header,.footer {
+    padding: 0 50px;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-  }
+}
+
+.contacts,.menu {
+    font-size: 18px;
+    line-height: 24.3px;
+    font-style: normal;
+}
 
 .header__nav {
     margin-right: 36.5px;
@@ -11,23 +21,28 @@
 .header__nav-list {
     display: flex;
     align-items: center;
-
-    gap: 13px;
+    justify-content: space-between;
 }
 
 .header__nav-list__item {
     list-style-type: none;
 }
 
+.header__link_active,.footer__link_active {
+    text-decoration: none;
+}
+
 .list-style-circle {
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: outside;
+    margin-left: 13px;
 }
 
 .header__logo {
     display: block;
-    width: 130px;
+    width: 148px;
     height: 105px;
+    padding: 1px 9px;
     margin-top: 92px;
     margin-bottom: 96px;
 }
@@ -35,22 +50,20 @@
 .header__address {
     display: block;
     max-width: 240px;
-    height: 98px;
     justify-self: end;
     align-items: flex-start;
 }
 
 .cover {
     position: relative;
-    padding: 50px;
+    padding: 165px 50px 50px;
     min-height: 757px;
 }
 
 .cover__title {
-    height: 385px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    margin-top: 115px;
     margin-bottom: 106px;
 }
 
@@ -62,16 +75,16 @@
     text-transform: uppercase;
     color: #fff;
     z-index: 1;
+    text-align: center;
 }
 
 .aligned-text_center {
     align-self: center;
-    translate: 0.1em 0;
+    translate: 0.15em 0;
 }
 
 .aligned-text_left {
     align-self: start;
-
 }
 
 .aligned-text_right {
@@ -80,24 +93,32 @@
     translate: 0.3em 0;
 }
 
+.cover,.lots__list-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover {
+    background-image: url('/images/cover.jpg');
+}
+
 .cover__description {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 51px;
+    max-height: 51px;
 }
 
 .cover__description-text {
     word-spacing: 20px;
     z-index: 1;
-}
-
-.cover__description-text__item {
     color: #fff;
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
 }
+
 
 .cover__description-button {
     background: transparent;
@@ -115,6 +136,14 @@
     inset: 0;
     background: #000;
     opacity: 0.6;
+}
+
+.lots,.about {
+    margin: 0 24px;
+}
+
+.lots,.footer {
+    margin-top: 180px;
 }
 
 .lots__link,.lots__title {
@@ -138,9 +167,7 @@
 .lots__list-item {
     width: 334px;
     min-height: 596px;
-    position: relative;
     list-style-type: none;
-    padding: 48px 40px;
     color: #fff;
     overflow: hidden;
 }
@@ -149,10 +176,24 @@
     height: 100%;
 }
 
+.card_type_film {
+    background-image: url('/images/card-lot-01.jpg');
+}
+
+.card_type_book {
+    background-image: url('/images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+    background-image: url('/images/card-lot-03.jpg');
+}
+
 .lots__list-item__card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    padding: 48px 40px;
 }
 
 .lots__list-item__card-title {
@@ -180,9 +221,13 @@
 }
 
 .about {
+    margin-top: 120px;
+}
+
+.about {
     display: flex;
     gap: 72px;
-    min-height: 595px;
+    height: fit-content;
 }
 
 .about__logo {
@@ -230,9 +275,11 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: space-between;
-    min-height: 180px;
+    height: fit-content;
+    align-items: start;
+    padding-top: 0.5em;
 }
 
 .footer__address {
@@ -241,11 +288,11 @@
     margin-bottom: 82px;
 }
 
-.footer__nav {
+.footer__nav-list {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer__nav-list__item {
@@ -255,7 +302,7 @@
 .footer__social-list {
     display: flex;
     gap: 48px;
-    align-items: flex-start;
+    align-self: flex-start;
 }
 
 .footer__social-list__item {

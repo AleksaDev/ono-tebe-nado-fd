@@ -14,7 +14,7 @@
     <nav class="header__nav">
         <ul class="header__nav-list menu">
             <li class="header__nav-list__item">
-                <a class="header__nav-list__item-link">
+                <a class="header__nav-list__item-link header__link_active" href="#">
                     главная
                 </a>
             </li>
@@ -35,7 +35,7 @@
     <a class="header__logo">
         <img class="header__logo-img" src="./images/logo-black.svg" alt="Логотип Оно тебе надо">
     </a>
-    <address class="header__address menu">
+    <address class="header__address contacts">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -50,16 +50,11 @@
             <span class="cover__title-accent aligned-text_right">надо</span>
         </h1>
         <div class="cover__description">
-            <p class="cover__description-text">
-                <span class="cover__description-text__item">аукцион</span>
-                <span class="cover__description-text__item">вещей,</span>
-                <span class="cover__description-text__item">в</span>
-                <span class="cover__description-text__item">которые</span>
-                <span class="cover__description-text__item">никто</span>
-                <span class="cover__description-text__item">не</span>
-                <span class="cover__description-text__item">верил</span>
-            </p>
-            <button class="cover__description-button">сделать ставку</button>
+            <p class="cover__description-text">аукцион вещей, в которые никто не верил</p>
+            <button class="cover__description-button"
+                    type="button">
+                сделать ставку
+            </button>
         </div>
         <div class="overlay"></div>
     </section>
@@ -69,7 +64,7 @@
         <ul class="lots__list">
             <li class="lots__list-item  card_type_film">
                 <a class="lots__list-item__link">
-                    <article class="lots__list-item__card">
+                    <article class="lots__list-item__card card_type_film">
                         <h3 class="lots__list-item__card-title">
                             Фильм режиссёра, который бросил киношколу
                         </h3>
@@ -78,14 +73,14 @@
                             Какой была бы ваша ставка, если бы вы не знали,
                             что режиссёр — Пол Томас Андерсон?
                         </p>
+                        <div class="overlay"></div>
                     </article>
                 </a>
-                <div class="overlay"></div>
             </li>
 
-            <li class="lots__list-item card_type_book">
+            <li class="lots__list-item">
                 <a class="lots__list-item__link">
-                    <article class="lots__list-item__card">
+                    <article class="lots__list-item__card card_type_book">
                         <h3 class="lots__list-item__card-title">
                             Книга, где описан один скучный день из жизни рекламного агента
                         </h3>
@@ -97,14 +92,14 @@
                             с античных времён. И это всё накладывается на эпическую
                             поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
                         </p>
+                        <div class="overlay"></div>
                     </article>
                 </a>
-                <div class="overlay"></div>
             </li>
 
-            <li class="lots__list-item card_type_picture">
+            <li class="lots__list-item">
                 <a class="lots__list-item__link">
-                    <article class="lots__list-item__card">
+                    <article class="lots__list-item__card card_type_picture">
                         <h3 class="lots__list-item__card-title">
                             Картина, которую повторит даже 5-летний сын маминой подруги
                         </h3>
@@ -114,9 +109,9 @@
                             котиков... Сколько бы вы на такое поставили, если бы не знали,
                             что это — одна из революционных работ Кандинского?
                         </p>
+                        <div class="overlay"></div>
                     </article>
                 </a>
-                <div class="overlay"></div>
             </li>
         </ul>
         <a class="lots__link" href="#">посмотреть больше</a>
@@ -153,7 +148,7 @@
 </main>
 
 <footer class="footer">
-    <address class="footer__address menu">
+    <address class="footer__address contacts">
         <a href="#">+9 999 555 5555</a>
         <a href="#">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -161,7 +156,7 @@
     <nav class="footer__nav">
         <ul class="footer__nav-list menu">
             <li class="footer__nav-list__item">
-                <a class="footer__nav-list__item-link">
+                <a class="footer__nav-list__item-link .footer__link_active" href="#">
                     главная
                 </a>
             </li>
