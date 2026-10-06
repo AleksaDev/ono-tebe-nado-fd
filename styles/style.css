@@ -1,6 +1,23 @@
 .header,.footer {
     padding: 0 50px;
 }
+.lots__list-item,.cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.lots,.about {
+    margin: 0 24px;
+}
+
+.lots,.footer {
+    margin-top: 180px;
+}
+
+.lots__link,.lots__title {
+    margin-left: 40px;
+}
 
 .header {
     display: grid;
@@ -93,12 +110,6 @@
     translate: 0.3em 0;
 }
 
-.lots__list-item,.cover {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .cover {
     background-image: url('/images/cover.jpg');
 }
@@ -119,7 +130,6 @@
     text-transform: uppercase;
 }
 
-
 .cover__description-button {
     background: transparent;
     border: 1px solid #fff;
@@ -136,18 +146,6 @@
     inset: 0;
     background: #000;
     opacity: 0.6;
-}
-
-.lots,.about {
-    margin: 0 24px;
-}
-
-.lots,.footer {
-    margin-top: 180px;
-}
-
-.lots__link,.lots__title {
-    margin-left: 40px;
 }
 
 .lots__title {
