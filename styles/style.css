@@ -11,12 +11,12 @@
     margin: 0 24px;
 }
 
-.lots,.footer {
-    margin-top: 180px;
-}
-
 .lots__link,.lots__title {
     margin-left: 40px;
+}
+
+.lots,.footer {
+    margin-top: 180px;
 }
 
 .header {
