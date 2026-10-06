@@ -93,7 +93,7 @@
     translate: 0.3em 0;
 }
 
-.cover,.lots__list-item {
+.lots__list-item,.cover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,13 +221,10 @@
 }
 
 .about {
-    margin-top: 120px;
-}
-
-.about {
     display: flex;
     gap: 72px;
     height: fit-content;
+    margin-top: 120px;
 }
 
 .about__logo {
