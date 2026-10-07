@@ -1,6 +1,7 @@
 .header,.footer {
     padding: 0 50px;
 }
+
 .lots__list-item,.cover {
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,11 +58,14 @@
 
 .header__logo {
     display: block;
-    width: 148px;
-    height: 105px;
-    padding: 1px 9px;
     margin-top: 92px;
     margin-bottom: 96px;
+    width: 148px;
+    height: 105px;
+}
+
+.header__logo-img {
+    height: 100%;
 }
 
 .header__address {
@@ -73,7 +77,7 @@
 
 .cover {
     position: relative;
-    background-image: url('/images/cover.jpg');
+    background-image: url('../images/cover.jpg');
     padding: 165px 50px 50px;
     min-height: 757px;
 }
@@ -83,12 +87,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 106px;
+    gap: 20px;
 }
 
 .cover__title-accent {
     font-size: 100px;
     font-weight: 700;
-    line-height: 130%;
+    line-height: 115%;
     letter-spacing: 30%;
     text-transform: uppercase;
     color: #fff;
@@ -111,8 +116,6 @@
     translate: 0.3em 0;
 }
 
-
-
 .cover__description {
     display: flex;
     justify-content: space-between;
@@ -121,7 +124,7 @@
 }
 
 .cover__description-text {
-    word-spacing: 20px;
+    word-spacing: 18.7px;
     z-index: 1;
     color: #fff;
     font-size: 22px;
@@ -174,15 +177,15 @@
 }
 
 .card_type_film {
-    background-image: url('/images/card-lot-01.jpg');
+    background-image: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-    background-image: url('/images/card-lot-02.jpg');
+    background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background-image: url('/images/card-lot-03.jpg');
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .lots__list-item__card {
@@ -269,24 +272,22 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
+    grid-template-columns: 1fr max-content 1fr;
     height: fit-content;
     align-items: start;
-    padding-top: 0.5em;
+    padding-top: 14px;
 }
 
 .footer__address {
     width: 264.5px;
-    max-height: 98px;
     margin-bottom: 82px;
 }
 
 .footer__nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    line-height: 21px;
 }
 
 .footer__nav-list__item {
@@ -296,7 +297,8 @@
 .footer__social-list {
     display: flex;
     gap: 48px;
-    align-self: flex-start;
+    justify-self: end;
+    align-self: start;
 }
 
 .footer__social-list__item {
